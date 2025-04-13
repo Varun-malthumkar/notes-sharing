@@ -3,17 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Browse academic notes shared by students">
+    <meta name="description" content="Browse shared academic notes from students.">
     <title>Browse Notes | Share Your Book</title>
-    <style>
-        /* Add your styles here */
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header Section -->
     <header>
         <div class="logo">
             <h1>Share Your Book 📚</h1>
+            <p>From your books to someone’s brain.</p>
         </div>
         <nav>
             <ul>
@@ -24,16 +22,35 @@
         </nav>
     </header>
 
-    <!-- Browse Notes Section -->
-    <div class="browse-container">
+    <main>
         <h2>Browse Notes</h2>
         <p>Search and browse through notes shared by other students!</p>
 
-        <!-- Search Form (Optional) -->
-        <form method="GET" action="#">
-            <input type="text" name="search" placeholder="Search notes..." value="{{ search_query }}">
-            <button type="submit">Search</button>
-        </form>
+        <div class="notes-list">
+            <!-- Simulated list of notes -->
+            <ul>
+                <li>
+                    <h3>Math Notes - Algebra</h3>
+                    <p><strong>Subject:</strong> Mathematics</p>
+                    <p><strong>Semester:</strong> 2nd</p>
+                    <p>Comprehensive notes on algebra and linear equations.</p>
+                    <a href="#">Download</a>
+                </li>
+                <li>
+                    <h3>Physics Notes - Mechanics</h3>
+                    <p><strong>Subject:</strong> Physics</p>
+                    <p><strong>Semester:</strong> 3rd</p>
+                    <p>Notes covering mechanics, forces, and motion.</p>
+                    <a href="#">Download</a>
+                </li>
+                <!-- Add more notes here -->
+            </ul>
+        </div>
+    </main>
 
-        <!-- Notes List -->
-        <
+    <footer>
+        <p>&copy; 2025 Share Your Book | Designed by Varun Malthumkar</p>
+        <p>Email: <a href="mailto:malthumkarvarun@gmail.com">malthumkarvarun@gmail.com</a></p>
+    </footer>
+</body>
+</html>

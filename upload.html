@@ -3,53 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Upload your notes to Share Your Book platform">
-    <title>Share Your Book | Upload Notes</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <meta name="description" content="Upload academic notes to share with others.">
+    <title>Upload Notes | Share Your Book</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Share Your Book 📚</h1>
+            <p>From your books to someone’s brain.</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="upload.html">Upload Notes</a></li>
+                <li><a href="browse.html">Browse Notes</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            padding: 20px;
-        }
+    <main>
+        <h2>Upload Your Notes</h2>
+        <p>Fill in the details and upload your notes to share them with students from other colleges.</p>
 
-        header {
-            background-color: #0066cc;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
+        <form id="uploadForm">
+            <label for="title">Note Title</label>
+            <input type="text" id="title" name="title" required>
 
-        header .logo h1 {
-            font-size: 2.5rem;
-            margin: 0;
-        }
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
 
-        header nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
+            <label for="semester">Semester</label>
+            <input type="text" id="semester" name="semester" required>
 
-        header nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
+            <label for="description">Description</label>
+            <textarea id="description" name="description" required></textarea>
 
-        header nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
+            <label for="file">Upload File</label>
+            <input type="file" id="file" name="file" accept=".pdf,.docx,.txt" required>
 
-        header nav ul li a:hover {
-            text-decoration: underline;
-        }
+            <button type="submit">Upload</button>
+        </form>
+    </main>
 
-        .upload-container {
-            max-width: 600px;
-            margin:
+    <footer>
+        <p>&copy; 2025 Share Your Book | Designed by Varun Malthumkar</p>
+        <p>Email: <a href="mailto:malthumkarvarun@gmail.com">malthumkarvarun@gmail.com</a></p>
+    </footer>
+
+    <script>
+        // Simulate form submission
+        document.getElementById('uploadForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Note uploaded successfully (simulated)!');
+            // In a real scenario, you would send the form data to a backend API here
+            // For now, let's just clear the form
+            document.getElementById('uploadForm').reset();
+        });
+    </script>
+</body>
+</html>

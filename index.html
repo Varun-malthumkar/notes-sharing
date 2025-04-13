@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Share Your Book - A platform for students to share and access study notes">
+    <title>Share Your Book | Home</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and Layout */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #0066cc;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header .logo h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        header nav ul {
+            list-style-type: none;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Section Styles */
+        .main-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px;
+            margin-top: 20px;
+            background-color: #fff;
+        }
+
+        .main-section .intro {
+            width: 50%;
+        }
+
+        .main-section .intro h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .main-section .intro p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .main-section .cta-btn {
+            background-color: #28a745;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            margin-right: 20px;
+            display: inline-block;
+        }
+
+        .main-section .cta-btn:hover {
+            background-color: #218838;
+        }
+
+        .main-section .image-container img {
+            width: 400px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0066cc;
+            color: white;
+            margin-top: 30px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .main-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .main-section .intro {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .main-section .image-container img {
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Share Your Book 📚</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="upload.html">Upload Notes</a></li>
+                <li><a href="browse.html">Browse Notes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <section class="main-section">
+        <div class="intro">
+            <h2>Welcome to "Share Your Book"</h2>
+            <p>From your books to someone’s brain. Share your study notes and help your fellow students!</p>
+            <a href="upload.html" class="cta-btn">Upload Your Notes</a>
+            <a href="browse.html" class="cta-btn">Browse Notes</a>
+        </div>
+        <div class="image-container">
+            <img src="https://via.placeholder.com/400x250.png?text=Study+Notes" alt="Study Notes" />
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Share Your Book | Designed by Varun Malthumkar</p>
+        <p>Email: <a href="mailto:malthumkarvarun@gmail.com">malthumkarvarun@gmail.com</a></p>
+    </footer>
+</body>
+</html>
